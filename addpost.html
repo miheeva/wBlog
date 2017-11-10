@@ -11,6 +11,43 @@
 </head>
 <body>
 <header>
+    <div class="preview">
+        <style>
+
+            #testLinks {
+                position: fixed;
+                top: 5px;
+                right: 5px;
+                width: 120px;
+                height: 110px;
+                padding: 5px;
+                background: antiquewhite;
+            }
+            #testLinks a {
+                color: black;
+                text-decoration: underline;
+            }
+            @media screen and (max-width: 860px) {
+                #testLinks {
+                    top: 85px;
+                }
+            }
+        </style>
+
+        <div id="testLinks">
+            <p style="text-align: right;cursor: pointer" id="close">x</p>
+            <ul>
+                <li>1. <a href="index.html">index page</a></li>
+                <li>2. <a href="adpage.html">ad page</a></li>
+                <li>3. <a href="addpost.html"><strong>add post page</strong></a></li>
+            </ul>
+        </div>
+        <script>
+            document.getElementById('close').onclick = function () {
+                document.getElementById('testLinks').style.display = 'none';
+            }
+        </script>
+    </div>
     <div class="login">
         <a href="#">Log out</a>
     </div>

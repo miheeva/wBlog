@@ -11,6 +11,43 @@
 </head>
 <body>
     <div class="container adPage">
+        <div class="preview">
+            <style>
+
+                #testLinks {
+                    position: fixed;
+                    top: 5px;
+                    right: 5px;
+                    width: 120px;
+                    height: 110px;
+                    padding: 5px;
+                    background: antiquewhite;
+                }
+                #testLinks a {
+                    color: black;
+                    text-decoration: underline;
+                }
+                @media screen and (max-width: 860px) {
+                    #testLinks {
+                        top: 85px;
+                    }
+                }
+            </style>
+
+            <div id="testLinks">
+                <p style="text-align: right;cursor: pointer" id="close">x</p>
+                <ul>
+                    <li>1. <a href="index.html">index page</a></li>
+                    <li>2. <a href="adpage.html"><strong>ad page</strong></a></li>
+                    <li>3. <a href="addpost.html">add post page</a></li>
+                </ul>
+            </div>
+            <script>
+                document.getElementById('close').onclick = function () {
+                    document.getElementById('testLinks').style.display = 'none';
+                }
+            </script>
+        </div>
         <div class="adBlockBig">
             <a href="#"><img src="assets/img/banner.jpg" alt=""></a>
 

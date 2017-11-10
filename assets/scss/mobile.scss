@@ -29,6 +29,7 @@
     align-items: center;
     &.adPage {
       flex-direction: column-reverse;
+      height: auto;
       .adBlockBig {
         width: 300px;
         height: auto;
