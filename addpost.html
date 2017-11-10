@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+<header>
+    <div class="login">
+        <a href="#">Log out</a>
+    </div>
+    <div class="logo">
+        <a href="#">w</a>
+    </div>
+</header>
+<div class="offsetHeader"></div>
+<div class="container">
+    <div class="addPostContainer">
+        <div class="addPost">
+            <div class="headAdd"><h2>Write a post</h2></div>
+            <div class="tabs">
+                <input type="radio" name="odin" checked="checked" id="usual"/>
+                <label class="usualLabel" for="usual">Usual</label>
+
+                <input type="radio" name="odin" id="promo"/>
+                <label class="promoLabel" for="promo">Promo</label>
+                    <div class="usualForm">
+                        <form action="">
+                            <textarea name="usualCaption" id="usualCaption" placeholder="Caption"></textarea>
+                            <textarea name="usualDescription" id="usualDescription" placeholder="Description"></textarea>
+                            <label class="imgUpload justify-content-center align-items-center flex-column">
+                                <span class="imgUploadBtn"><img src="assets/img/cam.png" alt=""></span>
+                                <input id="loadImg" class="setValid" required type="file" accept="image/*">
+                                <img id="previewImg" class="previewImg">
+                            </label>
+                            <input type="text" placeholder="Source link">
+                            <button>Post</button>
+                        </form>
+                    </div>
+                    <div class="promoForm">
+                        <form action="">
+                            <textarea name="promoCaption" id="promoCaption" placeholder="Caption"></textarea>
+                            <input type="text" placeholder="Source link">
+                            <button>Post</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="postsContainer">
+
+        <div class="posts">
+            <div class="post">
+
+                        <div class="postInfo">
+                            <a href="#"><div class="datetime"><span>today</span></div></a>
+
+                        <div class="editPost">
+                            <a class="grayLink" href="#">edit</a>|<a class="grayLink" href="#">delete</a>
+                        </div>
+                        </div>
+                <a href="#">
+                    <div class="headPost"><h2>What's going on in the California? More people get to the Philautica Cult.</h2></div>
+                    <div class="descriptionPost"><p>Why so many people believe this? Let's explain phenomena. Friend of mine knows
+                        something special and he seems super cool.</p></div>
+                    <div class="imagePost"><img src="https://pp.userapi.com/c639520/v639520037/2f820/FaLbW3Mml54.jpg" alt=""></div>
+
+                </a>
+            </div>
+            <hr>
+            <div class="post promo">
+                <a href="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum harum in, obcaecati
+                        possimus voluptatibus. Adipisci aperiam architecto esse eum maiores maxime molestias quae
+                        reprehenderit sit! Dolores magni quod sunt?</p>
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.adPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  .adBlockBig {
+    width: 300px;
+    height: 600px;
+    margin-right: 50px;
+    * {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .readNext {
+    @include flexCenter();
+    flex-direction: column;
+    .logo {
+      margin-bottom: 70px;
+    }
+    .link {
+      a {
+        text-decoration: underline;
+        color: $black;
+        font-size: $px20;
+      }
+    }
+  }
+}
+

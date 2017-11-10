@@ -1,0 +1,65 @@
+/* fonts */
+@font-face {
+  font-family: OSLight;
+  src: url('../fonts/OpenSans/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: OSRegular;
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: OSSemibold;
+  src: url('../fonts/OpenSans/OpenSans-Semibold.ttf');
+}
+@font-face {
+  font-family: OSBold;
+  src: url('../fonts/OpenSans/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: OSExtrabold;
+  src: url('../fonts/OpenSans/OpenSans-ExtraBold.ttf');
+}
+
+/*colors*/
+$black: #000;
+$white: #fff;
+$border: #e8e8e8;
+$text: #b0b0b0;
+$promo: #fff47f;
+$blueBtn: #477fff;
+
+  /*font-sizes*/
+
+$px14: 1rem;
+$px20: 1.428rem;
+$px30: 2.143rem;
+$px40: 2.857rem;
+$px60: 4.286rem;
+
+
+
+/* others */
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: OSRegular;
+  font-size: 1rem;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+.arrowRight {
+
+}
+
+* {
+  box-sizing: border-box;
+}

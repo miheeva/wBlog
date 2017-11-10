@@ -1,0 +1,37 @@
+header {
+  @include flexCenter();
+  flex: 0 0 280px;
+  flex-direction: column;
+  min-width: 320px;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 0px 0px 0px 1px $border;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+    .login {
+      display: flex;
+      flex-grow: 1;
+      align-self: flex-end;
+      box-sizing: border-box;
+      a {
+        @include fontAttr(OSRegular, $px14, $text);
+      }
+
+    }
+}
+.logo {
+  display: flex;
+  flex-grow: 1;
+  box-sizing: border-box;
+  a, span {
+    @include fontAttr(OSExtrabold, $px60, $black);
+  }
+}
+.offsetHeader {
+  display: flex;
+  flex: 0 0 320px;
+  max-width: 320px;
+  height: 100vh;
+}

@@ -1,0 +1,50 @@
+@mixin testShow() {
+  border: 1px solid red;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fontAttr($fontFamily, $fontSize, $color) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $color;
+}
+
+@mixin padding30(){
+  padding: 30px;
+}
+
+@mixin paddingAll($pt, $pb, $pl, $pr) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+  padding-left: $pl;
+  padding-right: $pr;
+
+}
+
+@mixin webkitPlaceholder($color, $fontSize, $fontFamily) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+  }
+}
+
+@mixin mozPlaceholder($color, $fontSize, $fontFamily) {
+  &::-moz-placeholder {
+    color: $color;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+  }
+  &:-moz-placeholder {
+    color: $color;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+  }
+}
+
+

@@ -1,0 +1,86 @@
+@media screen and (max-width: 860px) {
+  body {
+    flex-direction: column;
+  }
+  header {
+    flex: 0 0 100%;
+    min-width: 100%;
+    position: relative;
+    height: 80px;
+    flex-direction: row-reverse;
+    .logo {
+      flex-grow: 0;
+    }
+    .login {
+      align-self: center;
+      justify-content: flex-end;
+      position: absolute;
+      right: 20px;
+    }
+    //.login+.logo {
+    //  flex-grow: 1;
+    //  justify-content: flex-end;
+    //}
+  }
+  .offsetHeader {
+    display: none;
+  }
+  .container {
+    align-items: center;
+    &.adPage {
+      flex-direction: column-reverse;
+      .adBlockBig {
+        width: 300px;
+        height: auto;
+        margin: 0;
+      }
+      .readNext {
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+    .addPostContainer {
+      width: 100%;
+    }
+    .postsContainer {
+      width: 100%;
+      .posts {
+        .post {
+          .imagePost {
+            width: 100%;
+            min-width: 100%;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .container {
+    &.adPage {
+      .adBlockBig {
+        width: 100%;
+        height: auto;
+      }
+      .readNext {
+        .logo {
+          margin-bottom: 20px;
+        }
+        .link {
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
