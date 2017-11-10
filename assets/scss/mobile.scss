@@ -44,11 +44,30 @@
 }
 
 @media screen and (max-width: 510px) {
+  header {
+    height: 50px;
+    .logo {
+      a {
+        font-size: $px40;
+      }
+    }
+  }
   .container {
     width: 100%;
+    padding: 15px;
     box-sizing: border-box;
     .addPostContainer {
       width: 100%;
+    }
+    .readNext {
+      .logo {
+        margin-bottom: 40px;
+      }
+      .headPost {
+        padding: 10px 20px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
     }
     .postsContainer {
       width: 100%;
