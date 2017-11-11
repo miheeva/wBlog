@@ -8,8 +8,13 @@
     position: relative;
     height: 80px;
     flex-direction: row-reverse;
+    padding: 0;
     .logo {
       flex-grow: 0;
+      height: 100%;
+      a {
+        line-height: 1.16;
+      }
     }
     .login {
       align-self: center;
@@ -49,6 +54,7 @@
     .logo {
       a {
         font-size: $px40;
+        line-height: 1.07;
       }
     }
   }
@@ -71,11 +77,22 @@
     }
     .postsContainer {
       width: 100%;
+      padding: 15px 0;
       .posts {
         .post {
+          &.promo {
+            margin-top: 17px;
+          }
+          .datetime {
+            padding: 0 0 10px;
+          }
           .imagePost {
             width: 100%;
             min-width: 100%;
+            padding: 0;
+          }
+          .headPost {
+            padding: 0 0 15px;
           }
         }
       }
